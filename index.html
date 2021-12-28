@@ -1,12 +1,25 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang='en'>
     <head>
-
         <style>
             @media(max-width:414px){
             body{
-                background-color:white;
-            
+                
+                background-image: url("https://raw.githubusercontent.com/willamjonathan/hello-github-actions/main/exercise-png-11553981592o5piw0mrxs.png");
+                background-position-x: -250px;
+                background-position-y: 70px;
+                background-size: 600px 700px;
+                background-repeat: none;
+                
+                
+            }
+            .bg{
+                z-index: -1;
+                opacity: 0.5;
+                position: absolute;
+                top:0%;
+                left:20%;
+                
             }
             .header{
                 position: absolute;
@@ -17,91 +30,71 @@
                 background-color:#4A6572 ;
                 border-bottom: 3px solid black;
             }
-            .header .fas{
-                position: relative;
-                left:5%;
-                bottom:5%;
-                color:#f9aa33;
-            }
+            .part1{
+                position:fixed;
+                top:25%;
+                right:50%; 
+                
 
-            .bmi{
-                font-family: 'Times New Roman', Times, serif;
-                font-weight: bold;
-                font-size: 30px;
-                position: relative;
+            }
+            .title{
+                position:relative;
+                top:30%;
+                left:50%;
+                font-size:100px;
                 text-align: center;
-                top:30%;
+                width:100px;
+                font-family: fantasy;
                 color:#f9aa33;
             }
-            .parta{
+            .subtitle{
+                font-size:15px;
                 position:absolute;
-                top:15%;
+                top:100%;
+                width:300px;
                 left:10%;
-            
-                width: 100%;
-            
+                font-family: cursive;
+                color:#f9aa33;
             }
-            .mass{
-                width:60%;
-                position: absolute;
-                font-size: 20px;
-                font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-                font-weight: bold;
-            }
-            .box1{
-                position:fixed;
-                top:20%;
-                left:10%;
-                width:70%;
-                height:5%;
-                background-color: white;
-                border: 2px solid black;
-                
-            }
-            .mass1{
+            .login{
+                color:#f9aa33;
+                display: block;
+                font-size:30px;
                 position:absolute;
-                bottom:0%;
-                font-size: 20px;
-            }
-            .partb{
-                position:absolute;
-                top:30%;
-                left:10%;
-            
-                width: 100%;
-            
-            }
-            .height{
-                width:70%;
-                position: absolute;
-                font-size: 20px;
-                font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-                font-weight: bold;
-            }
-            .box2{
-                position:fixed;
-                top:33%;
-                left:10%;
-                width:70%;
-                height:5%;
-                background-color: white;
-                border: 2px solid black;
-                
-            }
-            .height1{
-                position:absolute;
-                bottom:0%;
-                font-size: 20px;
-            }
-            .nextp{
-                position:absolute;
-                top:50%;
-                right:12%;
-                
+                top:150%;
+                text-align: center;
+                background-color: #4A6572;
+                width:200px;
+                padding:10px;
 
+                cursor: pointer;
+                border:3px solid black;
+                border-radius: 200px;
+                
+                box-shadow:10px 10px#232F34 ;
+            
             }
-            .nextp .fas{
-                color:#f9aa33;
+            div:hover{
+                box-shadow: none;
+            }
+            .signin{
+                font-size:30px;
+                position: absolute;
+                top:230%;
+                text-align: center;
+                background-color: #4A6572;
+                width:200px;
+                padding:10px;
+                box-shadow:10px 10px#232F34;
+                cursor: pointer;
+                border:3px solid black;
+                border-radius: 200px;
+                
+            }
+
+            signin:hover{
+                box-shadow:none;
+
             }
             .footer{
                 position:absolute;
@@ -111,6 +104,7 @@
                 height:10%;
                 background-color:#4A6572 ;
                 border-top: 3px solid black;
+            
             }
             .moto{
                 position: absolute;
@@ -120,46 +114,28 @@
                 color:#f9aa33;
             }
         }
+
         </style>
-        <title>mass height page</title>
-        <script src="https://kit.fontawesome.com/7b0b641d05.js" crossorigin="anonymous"></script>
-        <meta charset="8utf">
+        
+        <meta charset="utf8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="https://kit.fontawesome.com/7b0b641d05.js" crossorigin="anonymous"></script>
+        <title> FIT </title>
     </head>
     <body>
-        <div class = "header">
-            <div class ='bmi'><c>BMI</c></div>
-            <a href="FIT login2.html"style="color:black;text-decoration:none;">
-                <i class="fas fa-caret-left fa-2x"></i> 
-            </a>
-            
-        </div>
-        <div class ='parta'>
-            <div class ='mass'>
-            <p>Please input your mass:</p>
-            </div>
-            <div class ="box1">
-            <div class ='mass1'><u>50kg</u></div>
-            </div>
-        </div>
-        <div class ='partb'>
-            <div class ='height'>
-            <p>Please input your height:</p>
-            </div>
-            <div class ="box2">
-            <div class ='height1'><u>175cm</u></div>
-            </div>
-        </div>
-        <div class ="nextp">
-            <b><a href = "secondpagecont.html"style="color:black;text-decoration:none;"><i class="fas fa-caret-right fa-2x"></i></a></b>
-        </div>
-        <div class ="footer">
+        <div class='bg'>
 
-            
+        </div>
+        <div class = "header"></div>
+        <div class = 'part1'>
+            <div class = "title"> FIT  </div>
+            <div class ="subtitle"><b>YOUR HEALTHY SOLUTION</b></div>
+            <div class = "login">
+                <b><a  href="FIT login2.html" style="color:#f9aa33;text-decoration:none;">LOG IN</a></b></div>
+            <div class = "signin" style="color:#f9aa33;text-decoration:none;"><b>SIGN IN</b></div>
+        </div>    
+        <div class ="footer">
             <div class ="moto"><b>YOUR HEALTHY SOLUTION</b></div>
         </div>
-        
-
     </body>
-
 </html>
